@@ -3,16 +3,18 @@ const CssGeneratorPlugin = require('css-generator-plugin')
 module.exports = defineConfig({
   transpileDependencies: true,
   lintOnSave: false,
+  devServer: {
+    proxy: {
+      '/code': {
+        target: 'http://localhost:6005/code'
+      }
+    }
+  },
   configureWebpack: {
     resolve: {
       alias: {
         '/src/components/HelloWorld.vue': '/patchs/components/HelloWorld.vue'
       },
-    },
-    proxy: {
-      '/code': {
-        target: 'http://localhost:6005/code'
-      }
     },
     plugins: [
       new CssGeneratorPlugin({
