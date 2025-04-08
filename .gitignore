@@ -304,7 +304,7 @@ $RECYCLE.BIN/
 *.catWebpackConfig*
 
 # 自动样式库
-src/style/auto.css
+./vue-wrap/src/style/auto.css
 
 # 微前端相关文件 暂时屏蔽
 src/public-path.js
