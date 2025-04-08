@@ -7,5 +7,9 @@
   "workspaces": [
     "node-server",
     "vue-wrap"
-  ]
+  ],
+  "scripts": {
+    "dev": "cd ./vue-wrap && npm run serve",
+    "serve": "cd ./node-server && npm run dev"
+  }
 }

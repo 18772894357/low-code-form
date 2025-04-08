@@ -9,6 +9,11 @@ module.exports = defineConfig({
         '/src/components/HelloWorld.vue': '/patchs/components/HelloWorld.vue'
       },
     },
+    proxy: {
+      '/code': {
+        target: 'http://localhost:6005/code'
+      }
+    },
     plugins: [
       new CssGeneratorPlugin({
         colors: {
