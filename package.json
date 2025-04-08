@@ -1,0 +1,11 @@
+{
+  "name": "drag-form",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "node-server",
+    "vue-wrap"
+  ]
+}
