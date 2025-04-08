@@ -1,0 +1,14 @@
+{
+  endOfLine: 'auto',
+  printWidth: 60,
+  semi: false,
+  singleQuote: true,
+  trailingComma: 'none',
+  useTabs: true,
+  htmlWhitespaceSensitivity: 'ignore',
+  arrowParens: 'always',
+  vueIndentScriptAndStyle: true,
+  bracketSpacing: true,
+  singleAttributePerLine: true,
+  bracketSameLine: true
+}
